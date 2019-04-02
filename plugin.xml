@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- com.example.hello -->
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.tripos" 
+        version="0.7.0">
+
+  <name>Tripos</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/tripos.js" target="js/tripos.js"/>
+
+  <js-module src="www/tripos.js" name="tripos">
+    <clobbers target="tripos" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Tripos">
+        <param name="android-package" value="com.example.plugin.Tripos"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/Tripos.java" target-dir="src/com/example/plugin/"/>
+  </platform>
+
+  <platform name="ios">
+    
+    <config-file target="config.xml" parent="/widget">
+      <feature name="Tripos">
+        <param name="ios-package" value="HWPTripos" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/HWPTripos.h" target-dir="TriposPlugin"/>
+    <source-file src="src/ios/HWPTripos.m" target-dir="TriposPlugin"/>
+  </platform>
+
+  <platform name="wp7">
+    <source-file src="src/wp7/Tripos.cs"/>
+  </platform>
+
+</plugin>

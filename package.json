@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-tripos",
+  "version": "0.1.0",
+  "description": "A  custom cordova plugin for Tripos Ios SDK",
+  "cordova": {
+    "id": "cordova-plugin-tripos",
+    "platforms": [
+      "android",
+      "ios",
+      "wp7"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "tripos",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Don Coleman",
+  "license": "Apache-2",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
