@@ -1,4 +1,4 @@
-# Cordova Hello World Plugin
+# Cordova Tripos   Plugin
 
 Simple plugin for Tripos payment SDK.
 
