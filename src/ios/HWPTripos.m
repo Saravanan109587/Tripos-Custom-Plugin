@@ -1,6 +1,6 @@
-#import "HWPHello.h"
+#import "HWPTripos.h"
 
-@implementation HWPHello
+@implementation HWPTripos
 
 - (void)greet:(CDVInvokedUrlCommand*)command
 {
