@@ -15,17 +15,5 @@
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 
-- (void)startSDK:(CDVInvokedUrlCommand*)command
-{
-
-    MainTableViewController *maintable;
-    maintable =[MainTableViewController alloc];
-    maintable=[maintable init];
-    [maintable setupTriPOSConfig];
-    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"SDk Intialized"];
-    [self.commandDelegate sendPluginResult:pluginResult
-                                callbackId:command.callbackId];
-}
-
-
+ 
 @end
