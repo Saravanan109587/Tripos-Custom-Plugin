@@ -4,6 +4,5 @@
 
 - (void) greet:(CDVInvokedUrlCommand*)command;
 - (void) startSDK:(CDVInvokedUrlCommand*)command;
-
-
+ 
 @end
