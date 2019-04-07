@@ -37,8 +37,6 @@
 
     <header-file src="src/ios/HWPTripos.h" target-dir="TriposPlugin"/>
     <source-file src="src/ios/HWPTripos.m" target-dir="TriposPlugin"/>
-    <framework src="src/ios/native/triPOSMobileSDK.framework" custom="true" />
-    <framework src="CFNetwork.framework" />
   </platform>
 
   <platform name="wp7">
