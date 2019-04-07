@@ -7,6 +7,6 @@
  
 - (void) callProcessSales:(CDVInvokedUrlCommand*)command;
 
-- (void) initializeSDK:(CDVInvokedUrlCommand*)command;
+- (void) callsetupTriPOSConfig:(CDVInvokedUrlCommand*)command;
 
 @end

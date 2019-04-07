@@ -30,8 +30,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *tcpIpTextField;
 @property (weak, nonatomic) IBOutlet UILabel *tcpIpLabel;
 
-- (IBAction)touchUpSaveBarButtonItem:(id)sender;
-
-+ (VTPApplicationMode)getEnvironmentTypeForIndex:(NSInteger)index;
-
+ 
+ 
 @end

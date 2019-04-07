@@ -15,6 +15,8 @@
     UISwitch* statusSwitch;
     NSMutableArray* tableData;
 }
+- (void) setupTriPOSConfig;
+- (void)initializeSDK;
 
 @property (retain, nonatomic) VTPConfiguration* vtpConfiguration;
 

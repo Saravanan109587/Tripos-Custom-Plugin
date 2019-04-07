@@ -1,5 +1,6 @@
 #import "HWPTripos.h"
 #import "VTPSaleRequest.h"
+import "MainTableViewController.h";
 @implementation HWPTripos
 
 - (void)greet:(CDVInvokedUrlCommand*)command
@@ -15,7 +16,16 @@
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 
- 
+ - (void)callsetupTriPOSConfig:(CDVInvokedUrlCommand*)command
+{
+    MainTableViewController *maintable;
+    maintable =[MainTableViewController alloc];
+    maintable=[maintable init];
+    [maintable setupTriPOSConfig];
+     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"SDk Intialized"];
+      [self.commandDelegate sendPluginResult:pluginResult
+                                callbackId:command.callbackId];
+}
  
 
 -(void)callProcessSales:(CDVInvokedUrlCommand*)command
